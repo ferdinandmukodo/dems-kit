@@ -1,0 +1,23 @@
+{
+    "header": [
+        "User ID",
+        "Name",
+        "County",
+        "Age"
+    ],
+    "rows": [
+        [
+            38920101,
+            "Ferdinand Mukodo",
+            "Nairobi",
+            18
+
+        ],
+        [
+            31992010,
+            "Edwinna Bikeri",
+            "Mombasa",
+            25
+        ]
+    ]
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script defer src="script.js"></script>
+    <title>DEMS</title>
+
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="ulclass">
+            <li><img src="assets/a1c3028948af4e50878fc21203996b37 (1).png"></li>
+            <li><button>home</button></li>
+            <li><button>services</button></li>
+            <li><button id="button" type="submit">Contact Us</button></li>
+            <li><button>lOG IN</button></li>
+        </ul>
+    </nav>
+  
+    <div class="container">
+        <p>DEMS</p>
+        <p>↓</p>
+        <p>Secure & Transparent</p>
+        <p>↓</p>
+        <p>True leaders</p>
+    </div>
+    <table class="table">
+        <thead></thead>
+        <tbody></tbody>
+    </table>
+    <div id="contactMessage" class="hide">
+        <form onsubmit="sendEmail(); reset (); return false;">
+            <h3>SEND US EMAIL</h3>
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Email@example.com" required>
+            <input type="text" id="phone" placeholder="Your Phone No." required>
+            <textarea id="message" rows="4" placeholder="How can we help you?"></textarea>
+            <button id="submitContactEmail" type="submit">Send</button>
+
+        </form>
+    </div>
+    <!-- <div class="popContainer">
+        <button type="submit" class="popBtn" onclick="openPopup()">Submit</button>
+        <div class="popup" id="popup">
+            <img src="assets/6705905_preview.png">
+            <h2>Thank You!</h2>
+            <p>Your message has been sent successfully.Thanks!</p>
+            <button onclick="closePopup()" type="popButtonCancel">Ok</button>
+        </div>
+    </div> -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <!-- <script src="">
+        function sendEmail(){
+            Email.send({
+                Host : "smtp.gmail.com",
+                Username : "DEMSKENYA",
+                Password : "DEMSKENYA@2022",
+                To : 'demskenya@gmail.com',
+                From : document.getElementById("email").value,
+                Subject : "New Contact Form Enquiry",
+                Body : "Name: " + document.getElementById("name").value
+                + "<br> Email: " + document.getElementById("email").value
+                + "<br> Phone no: " + document.getElementById("phone").value
+                + "<br> Message: " + document.getElementById("message").value
+            }).then(
+            message => alert("Email sent successfully!")
+            );
+        }
+
+        document.getElementById("signUp").onclick = function() {
+            document.getElementById("SignUPForm").style.display = "none";
+        }
+        
+        document.getElementById("show").onclick = function() {
+            document.getElementById("signUpForm").style.display = "block";
+        }
+    </script> -->
+    <!-- <script>
+        var i = 0; //start point of slides
+        var images = [];
+        var time = 3000
+        //list of images
+        images[0] = `assets/images_help.png`
+        images[1] = `assets/images_setting.png`
+        images[2] = `assets/images_profile.png`
+
+        //changing the images in slideshow
+        function changeImage(){
+            if(i < images.length - 1){
+                i++;
+            }else{
+                i = 0;
+            }
+            setTimeout("changeImage()",time);
+        }
+        window.onload = changeImage
+    </script> -->
+<body>
+</html>
