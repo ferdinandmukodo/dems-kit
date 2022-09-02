@@ -4,34 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script defer src="script.js"></script>
-    <title>DEMS</title>
-
+    <title>DEMS KENYA</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" href="styles/register.css">    
 </head>
 <body>
     <nav class="navbar">
         <ul class="ulclass">
             <li><img src="assets/a1c3028948af4e50878fc21203996b37 (1).png"></li>
             <li><button>home</button></li>
-            <li><button>services</button></li>
-            <li><button id="button" type="submit">Contact Us</button></li>
-            <li><button>lOG IN</button></li>
+            <li><button>voters</button></li>
+            <li><button id="button" type="submit">support</button></li>
+            <li><button>Login </button></li>
         </ul>
     </nav>
   
-    <div class="container">
-        <p>DEMS</p>
-        <p>↓</p>
-        <p>Secure & Transparent</p>
-        <p>↓</p>
-        <p>True leaders</p>
-    </div>
-    <table class="table">
-        <thead></thead>
-        <tbody></tbody>
-    </table>
-    <div id="contactMessage" class="hide">
+  
+    <div id="contactMessage" class="hie">
         <form onsubmit="sendEmail(); reset (); return false;">
             <h3>SEND US EMAIL</h3>
             <input type="text" id="name" placeholder="Your Name" required>
@@ -42,61 +31,66 @@
 
         </form>
     </div>
-    <!-- <div class="popContainer">
-        <button type="submit" class="popBtn" onclick="openPopup()">Submit</button>
-        <div class="popup" id="popup">
-            <img src="assets/6705905_preview.png">
-            <h2>Thank You!</h2>
-            <p>Your message has been sent successfully.Thanks!</p>
-            <button onclick="closePopup()" type="popButtonCancel">Ok</button>
+    <div class="registerContainer">
+        <table>
+            <tr>
+                <td>
+                    <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                        <div>
+                            <label>Full Name*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                            <input type="text" name="fullName" id="fullName">
+                        </div>
+                        <div>
+                            <label>National ID NO.*</label><label class="validation-error hide" id="idValidationError">This field is required.</label>
+                            <input type="text" name="empCode" id="nationalId">
+                        </div>
+                        <div>
+                            <label>D.O.B</label>
+                            <input type="text" name="dob" id="dob">
+                        </div>
+                        <div>
+                            <label>County</label>
+                            <input type="text" name="county" id="county">
+                        </div>
+                        <div  class="form-action-buttons">
+                            <input type="submit" value="Submit">
+                        </div>
+                    </form>
+                </td>
+                <td>
+                    <table class="list" id="votersList">
+                        <thead>
+                            <tr>
+                                <th>Full Name</th>
+                                <th>ID No.</th>
+                                <th>D.O.B</th>
+                                <th>County</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+    
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <!-- <section>
+        <div class="popContainer">
+            <button type="submit" class="popBtn" onclick="openPopup()">Submit</button>
+            <div class="popup" id="popup">
+                <img src="assets/6705905_preview.png">
+                <h2>Thank You!</h2>
+                <p>Your message has been sent successfully.Thanks!</p>
+                <button onclick="closePopup()" type="popButtonCancel">Ok</button>
+            </div>
         </div>
-    </div> -->
+
+    </section> -->
+    
     <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <!-- <script src="">
-        function sendEmail(){
-            Email.send({
-                Host : "smtp.gmail.com",
-                Username : "DEMSKENYA",
-                Password : "DEMSKENYA@2022",
-                To : 'demskenya@gmail.com',
-                From : document.getElementById("email").value,
-                Subject : "New Contact Form Enquiry",
-                Body : "Name: " + document.getElementById("name").value
-                + "<br> Email: " + document.getElementById("email").value
-                + "<br> Phone no: " + document.getElementById("phone").value
-                + "<br> Message: " + document.getElementById("message").value
-            }).then(
-            message => alert("Email sent successfully!")
-            );
-        }
-
-        document.getElementById("signUp").onclick = function() {
-            document.getElementById("SignUPForm").style.display = "none";
-        }
-        
-        document.getElementById("show").onclick = function() {
-            document.getElementById("signUpForm").style.display = "block";
-        }
-    </script> -->
-    <!-- <script>
-        var i = 0; //start point of slides
-        var images = [];
-        var time = 3000
-        //list of images
-        images[0] = `assets/images_help.png`
-        images[1] = `assets/images_setting.png`
-        images[2] = `assets/images_profile.png`
-
-        //changing the images in slideshow
-        function changeImage(){
-            if(i < images.length - 1){
-                i++;
-            }else{
-                i = 0;
-            }
-            setTimeout("changeImage()",time);
-        }
-        window.onload = changeImage
-    </script> -->
+    <script src="js/register.js"></script>
+    <script src="js/script.js"></script>
 <body>
 </html>

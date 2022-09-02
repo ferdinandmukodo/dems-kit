@@ -16,13 +16,13 @@ function sendEmail(){
     );
 }
 
-// document.getElementById("signUp").onclick = function() {
-//     document.getElementById("SignUPForm").style.display = "none";
-// }
+document.getElementById("signUp").onclick = function() {
+    document.getElementById("SignUPForm").style.display = "none";
+}
 
-// document.getElementById("show").onclick = function() {
-//     document.getElementById("signUpForm").style.display = "block";
-// }
+document.getElementById("show").onclick = function() {
+    document.getElementById("signUpForm").style.display = "block";
+}
 
 
 let button = document.querySelector('#button');
