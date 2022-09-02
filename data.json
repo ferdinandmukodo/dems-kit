@@ -1,23 +1,24 @@
 {
     "header": [
-        "User ID",
-        "Name",
-        "County",
-        "Age"
+        "fullName",
+        "nationalId",
+        "dob",
+        "County"
     ],
     "rows": [
         [
-            38920101,
             "Ferdinand Mukodo",
-            "Nairobi",
-            18
+            33787609,
+            "15.11.1990",
+            "Nairobi"
+           
 
         ],
         [
-            31992010,
             "Edwinna Bikeri",
-            "Mombasa",
-            25
+            25262728,
+            "10.10.2000",
+            "Mombasa"
         ]
     ]
 }

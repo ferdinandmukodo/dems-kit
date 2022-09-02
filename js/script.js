@@ -94,3 +94,5 @@ async function loadIntotable(url, table){
 }
 
 loadIntotable("./data.json", document.querySelector("table"));
+
+
