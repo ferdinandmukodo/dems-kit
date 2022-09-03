@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEMS</title>
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <link rel="stylesheet" href="styles/register.css">   
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="ulclass">
+            <li><img src="assets/a1c3028948af4e50878fc21203996b37 (1).png"></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="register.html" target="_self">voters</a></li>
+            <li><a href="contact.html" target="_self">support</a></li>
+            <li><a href="login.html">logout</a></li>
+            
+        </ul>
+    </nav>
+    <div class="registerContainer">
+        <table>
+            <tr>
+                <td>
+                    <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                        <div>
+                            <label>Full Name*</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                            <input type="text" name="fullName" id="fullName">
+                        </div>
+                        <div>
+                            <label>National ID NO.*</label><label class="validation-error hide" id="idValidationError">This field is required.</label>
+                            <input type="text" name="empCode" id="nationalId">
+                        </div>
+                        <div>
+                            <label>D.O.B</label>
+                            <input type="text" name="dob" id="dob">
+                        </div>
+                        <div>
+                            <label>County</label>
+                            <input type="text" name="county" id="county">
+                        </div>
+                        <div  class="form-action-buttons">
+                            <input type="submit" value="Submit">
+                        </div>
+                    </form>
+                </td>
+                <td>
+                    <table class="list" id="votersList">
+                        <thead>
+                            <tr>
+                                <th>Full Name</th>
+                                <th>ID No.</th>
+                                <th>D.O.B</th>
+                                <th>County</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+    
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script src="js/register.js"></script> 
+</body>
+</html>

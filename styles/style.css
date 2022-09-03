@@ -1,117 +1,189 @@
 body {
-    margin-top:0;
-    padding:0;
-    display: flex;
-    justify-content:center;
-    align-items:center;
-    height:100vh;
-    background:#ffffff;
-  }
-  
-  ul{
-    margin:0;
-    padding:0;
-    display:flex;
-  }
-  
-  ul li{
-    list-style:none;
-    margin:0 20px;
-    transition:0.5s;
-  }
-  
-  ul li button{
-    display: block;
-    position:relative;
-    text-decoration:none;
-    padding:5px;
-    font-size:18px;
-    font-family: sans-serif;
-    color:#fff;
-    text-transform:uppercase;
-    transition:0.5s;
-    
-  }
-  
-  ul:hover li button{
-    transform:scale(1.5);
-    opacity:0.2;
-    filter:blur(1px);
-  }
-  
-  ul li button:hover{
-    transform:scale(2);
-    opacity:1;
-    filter:blur(0);
-    text-decoration:none;
-    color:#fff;
-  }
-  
-  ul li button:before{
-    content:'';
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background:#1c39ba;
-    transition:0.5s;
-    transform-origin:right;
-    transform:scaleX(0);
-    z-index:-1;
-  }
-  
-  ul li button:hover:before{
-    transition:transform 0.5s;
-    transform-origin:left;
-    transform:scaleX(1);
-  }
-
-  
-.navbar {
-    overflow: hidden;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 10px; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
-    /* display: ruby-base;
-    align-items: center; */
-    align-items: center;
-    flex-direction: row;
+  margin-top:0;
+  padding:0;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+  background:#fff;
 }
-  
+
+ul{
+  margin:0;
+  padding:0;
+  display:flex;
+}
+
+ul li{
+  list-style:none;
+  margin:0 20px;
+  transition:0.5s;
+}
+
+ul li a{
+  display: block;
+  position:relative;
+  text-decoration:none;
+  padding:5px;
+  font-size:18px;
+  font-family: sans-serif;
+  color: black;
+  text-transform:uppercase;
+  transition:0.5s;
+}
+
+ul:hover li a{
+  transform:scale(1.5);
+  opacity:0.2;
+  filter:blur(1px);
+}
+
+ul li a:hover{
+  transform:scale(2);
+  opacity:1;
+  filter:blur(0);
+  text-decoration:none;
+  color:#000;
+}
+
+ul li a:before{
+  content:'';
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background: blue;
+  transition:0.5s;
+  transform-origin:right;
+  transform:scaleX(0);
+  z-index:-1;
+}
+
+ul li a:hover:before{
+  transition:transform 0.5s;
+  transform-origin:left;
+  transform:scaleX(1);
+}
+
+
+/* body {
+  margin-top: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #ffffff;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+ul li {
+  list-style: none;
+  margin: 0 20px;
+  transition: 0.5s;
+}
+
+ul li button {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  padding: 5px;
+  font-size: 18px;
+  font-family: sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  transition: 0.5s;
+
+}
+
+ul:hover li button {
+  transform: scale(1.5);
+  opacity: 0.2;
+  filter: blur(1px);
+}
+
+ul li button:hover {
+  transform: scale(2);
+  opacity: 1;
+  filter: blur(0);
+  text-decoration: none;
+  color: #fff;
+}
+
+ul li button:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #1c39ba;
+  transition: 0.5s;
+  transform-origin: right;
+  transform: scaleX(0);
+  z-index: -1;
+}
+
+ul li button:hover:before {
+  transition: transform 0.5s;
+  transform-origin: left;
+  transform: scaleX(1);
+}
+ */
+
+.navbar {
+  overflow: hidden;
+  position: fixed;
+  /* Set the navbar to fixed position */
+  top: 10px;
+  /* Position the navbar at the top of the page */
+  width: 100%;
+  /* Full width */
+  /* display: ruby-base;
+    align-items: center; */
+  align-items: center;
+  flex-direction: row;
+}
+
 
 
 .container {
-    position: fixed;
-    color: #1c39ba;
-    z-index: -9;
-    align-items: center;
-    text-align: center;
-    font-style: oblique;
-    font-size: xx-large;
+  position: fixed;
+  color: #1c39ba;
+  z-index: -9;
+  align-items: center;
+  text-align: center;
+  font-style: oblique;
+  font-size: xx-large;
 }
 
 
-.ulclass{
+.ulclass {
   align-items: center;
   justify-content: space-around;
 }
 
 
 
-button{
+button {
   background-color: #112c38;
 }
 
-form{
+form {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'poppins',sans-serif;
+  font-family: 'poppins', sans-serif;
 
 }
 
-.formcontainer{
+.formcontainer {
   width: 50%;
   height: 70vh;
   display: flex;
@@ -121,7 +193,7 @@ form{
 
 }
 
-form{
+form {
   background-color: rgb(184, 119, 119);
   display: flex;
   flex-direction: column;
@@ -131,14 +203,15 @@ form{
 
 }
 
-form h3{
+form h3 {
   color: #555;
   font-weight: 800;
   margin-bottom: 20px;
 
 }
 
-form input, form textarea{
+form input,
+form textarea {
   border: 0;
   margin: 10px 0;
   padding: 20px;
@@ -148,7 +221,7 @@ form input, form textarea{
 
 }
 
-form button{
+form button {
   padding: 15px;
   background-color: #ff5361;
   color: #fff;
@@ -157,35 +230,38 @@ form button{
   outline: none;
   cursor: pointer;
   width: 150px;
-  margin: 20px auto 0;border-radius: 30px;
+  margin: 20px auto 0;
+  border-radius: 30px;
 }
 
 
 
-.user-pic{
-  width: 40px;;
+.user-pic {
+  width: 40px;
+  ;
   border-radius: 50%;
   cursor: pointer;
   margin-left: 30px;
 }
 
-.subMenu{
+.subMenu {
   position: absolute;
   top: 100%;
   right: 10%;
   width: 32px;
 }
 
-.userInfo{
+.userInfo {
   background-color: #fff;
   padding: 20px;
 
 }
-.hide{
+
+.hide {
   visibility: hidden;
 }
 
-.reveal{
+.reveal {
   visibility: visible;
 }
 
@@ -264,26 +340,29 @@ form button{
 .table {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-collapse: collapse;
-  font-family: 'Quicksand',sans-serif;
+  font-family: 'Quicksand', sans-serif;
   overflow: hidden;
   font-weight: bold;
 }
+
 .table thead th {
   background: #009578;
   color: #ffffff;
 
 }
 
-.table td ,
+.table td,
 .table th {
   padding: 10px 20px;
 
 }
+
 .table tbody tr:nth-of-type(even) {
   background: #eeeeee;
 
 }
-.table tbody tr:last-of-type{
+
+.table tbody tr:last-of-type {
   border-bottom: 2px solid #009578;
 
 }
