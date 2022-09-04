@@ -12,14 +12,35 @@
     <nav class="navbar">
         <ul class="ulclass">
             <li><img src="assets/a1c3028948af4e50878fc21203996b37 (1).png"></li>
-            <li><a href="#">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="register.html" target="_self">voters</a></li>
             <li><a href="contact.html" target="_self">support</a></li>
             <li><a href="login.html" target="_self">logout</a></li>
             
         </ul>
     </nav>
-      
+   
+    <div id="liveDate"><span id='timer'></span></div>
+   
+    <script>
+
+        function displayDate() {
+        var x = new Date()
+        var ampm = x.getHours( ) >= 12 ? ' PM' : ' AM';
+        
+        var x1=x.getMonth() + 1+ "/" + x.getDate() + "/" + x.getFullYear(); 
+        x1 = x1 + " - " +  x.getHours( )+ ":" +  x.getMinutes() + ":" +  x.getSeconds() + ":" + ampm;
+        document.getElementById('timer').innerHTML = x1;
+        displayTime();
+         }
+         function displayTime(){
+        var refresh=1000; // Refresh rate in milli seconds
+        mytime=setTimeout('displayDate()',refresh)
+        }
+        displayTime()
+    </script>
+        
+   
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="js/register.js"></script>
     <script src="js/script.js"></script>

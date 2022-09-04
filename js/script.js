@@ -96,3 +96,17 @@ async function loadIntotable(url, table){
 loadIntotable("./data.json", document.querySelector("table"));
 
 
+function displayDate() {
+    var x = new Date()
+    var ampm = x.getHours( ) >= 12 ? ' PM' : ' AM';
+    
+    var x1=x.getMonth() + 1+ "/" + x.getDate() + "/" + x.getFullYear(); 
+    x1 = x1 + " - " +  x.getHours( )+ ":" +  x.getMinutes() + ":" +  x.getSeconds() + ":" + ampm;
+    document.getElementById('timer').innerHTML = x1;
+    displayTime();
+     }
+     function displayTime(){
+    var refresh=1000; // Refresh rate in milli seconds
+    mytime=setTimeout('displayDate()',refresh)
+    }
+    displayTime()
