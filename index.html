@@ -19,13 +19,16 @@
             
         </ul>
     </nav>
+    <!-- <div id="liveDate"><span id='timer'></span></div> -->
    
     <div class="main-container">
-        <div id="liveDate"><span id='timer'></span></div>
-        <div class="container">
+       
+        
+        <div class="voteContainer">
             <p><output id="output">0</output></p>
-            <p><button type="button" id="btn">Increment</button></p>
+            <p><button type="button" id="btn">I VOTE FOR A</button></p>
         </div>
+
     </div>
     
    
@@ -45,6 +48,34 @@
         mytime=setTimeout('displayDate()',refresh)
         }
         displayTime()
+    </script>
+    <script>
+        var button = document.getElementById("btn")
+        var output = document.getElementById("output")
+        var number
+        var counter
+        
+
+        function init() {
+        // Convert string to primitve number
+        number = parseInt(output.innerText)
+        
+        
+        counter = number + 1
+        
+        function increment() {
+            // Increment vote count
+            value = counter
+            output.innerText = value
+        }
+        
+        // Output the increment value for every click
+        button.onclick = increment
+        }
+
+        window.onload = init
+
+        
     </script>
         
    

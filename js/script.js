@@ -1,5 +1,6 @@
 
 function sendEmail(){
+    e.preventDefaut()
     Email.send({
         Host : "smtp.hotmail.com",
         Username : "ferdinandamukod",
@@ -110,3 +111,4 @@ function displayDate() {
     mytime=setTimeout('displayDate()',refresh)
     }
     displayTime()
+
