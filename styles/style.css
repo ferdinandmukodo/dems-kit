@@ -272,7 +272,7 @@ form button {
   color: #000;
   font-size: larger;
   font-style: oblique;
-  position: fixed;
+  position: relative;
   z-index: -1;
   margin-top: 10px;
   align-items: start;
@@ -308,4 +308,9 @@ form button {
 .table tbody tr:last-of-type {
   border-bottom: 2px solid #009578;
 
+}
+
+main-container{
+  display: flex;
+  flex-direction: column;
 }
