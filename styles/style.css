@@ -314,12 +314,11 @@ main-container{
   display: flex;
   flex-direction: row;
 }
-.voteContainer {
+.voteContainerA {
   width: 8em;
   min-height: 2em;
   padding: 1em;
   position: absolute;
-  background-color: #eee;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
