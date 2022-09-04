@@ -1,3 +1,22 @@
+fetch(`${url}/headers`,{
+    method:"POST",
+    headers:{
+      "Content-Type": "application/json",
+       Accept: "application/json",
+    },
+    body:JSON.stringify(loan)
+}).then(response=>response.json);
+fetch(`${url}/rows`,{
+    method:"POST",
+    headers:{
+      "Content-Type": "application/json",
+       Accept: "application/json",
+    },
+    body:JSON.stringify(member)
+}).then(response=>response.json);
+
+
+
 
 function sendEmail(){
     e.preventDefaut()
